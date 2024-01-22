@@ -24,9 +24,5 @@ module.exports = function (sequelize, DataTypes) {
     }
   );
 
-  bott.associate = function (models) {
-    bott.hasMany(models.user, { foreignKey: "type", as: "user" });
-  };
-
   return bott;
 };
